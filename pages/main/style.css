@@ -127,11 +127,13 @@ a {
 }
 
 .first-section-panda {
-    background-image: url(../../assets/images/Giant_Panda.jpg);
+    background-image: url(../../assets/images/Giant\ Panda.svg);
     position:relative;
     min-height:780px;
     margin-top:-80px;
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .orange-circle {
