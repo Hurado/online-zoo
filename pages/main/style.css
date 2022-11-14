@@ -1,8 +1,16 @@
 :root {
     --orange:linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+    --black-blue:#333B41;
 
 }
-
+section {
+    overflow: hidden;
+    display: block;
+}
+aside {
+    display:block;
+}
+/* FIRST SECTION START */
 
 * {
     box-sizing: border-box;
@@ -132,7 +140,7 @@ a {
     min-height:780px;
     margin-top:-80px;
     overflow: hidden;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
 }
 
@@ -189,4 +197,69 @@ color: white;
 text-align: center;
 text-transform: uppercase;
 }
+/* FIRST SECTION END */
 
+/* SECOND SECTION START */
+
+.second-section-backstage {
+    position: relative;
+    color: var(--black-blue);
+    padding-top: 140px;
+    padding-bottom: 180px;
+}
+
+.old-man-photo {
+    background-image: url(../../assets/images/bamboo-cap.svg);
+    background-size: cover;
+    height: 403px;
+}
+
+section.second-section-backstage .backstage-container {
+    display: grid;
+    grid-template-columns: 609px 1fr;
+    gap: 87px;
+    height: 403px;
+}
+
+.backstage-container {
+    max-width: 1160px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h2 {
+    font-size:48px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.second-section-backstage h2 {
+    margin-top:0;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+p.title-text {
+    margin-top: 51px;
+    margin-bottom: 31px;
+    font-size:24px;
+    line-height: 140%;
+}
+
+.first-text-backstage{
+    margin-top:-20px;
+}
+
+.flower-right-photo {
+    background-image: url(../../assets/images/flower_foto1.svg);
+    position: absolute;
+    top:12px;
+    right:-90px;
+    width:293px;
+    height: 605px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
