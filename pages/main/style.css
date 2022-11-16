@@ -4,7 +4,7 @@
   --orange2: linear-gradient(113.96deg, #fa6f32 1.49%, #fe9013 101.44%);
 }
 section {
-  overflow: hidden;
+  /* overflow: hidden; */
   display: block;
 }
 aside {
@@ -366,5 +366,81 @@ p.native {
   position: absolute;
   top: 8px;
   right: 8px;
+}
+button.arrow.left::after {
+  background-image: url(../../assets/images/arrow-left.svg);
+}
+button.arrow::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 5px);
+  left: calc(50% - 9px);
+  height: 10px;
+  width: 18px;
+}
+.third-section-pets button.arrow.left {
+  position: absolute;
+  top: calc(872px / 2 - 63px / 2);
+  left: calc(50% - 1158px / 2 - 63px - 20px);
+}
+button.arrow {
+  position: relative;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+}
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+button {
+  width: 298px;
+  height: 54px;
+  padding-top: 2px;
+  background: var(--orange);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.third-section-pets button.arrow.right {
+  position: absolute;
+  top: calc(872px / 2 - 63px / 2);
+  right: calc(50% - 1158px / 2 - 63px - 20px);
+}
+button:hover {
+  background: #e47209;
+}
+
+button.arrow.right::after {
+  background-image: url(../../assets/images/arrow-right.svg);
+}
+.third-section-pets .flower-left {
+  position: absolute;
+  bottom: -233px;
+  left: 0;
+  width: 292px;
+  height: 460px;
+  background: url(../../assets/images/palm_foto.svg);
+}
+.third-section-pets .flower-right {
+  position: absolute;
+  bottom: -233px;
+  right: 0;
+  width: 368px;
+  height: 275px;
+  background: url(../../assets/images/strelitzia\ 1.svg);
+}
+.third-section-pets button.rounded {
+  position: absolute;
+  bottom: -134px;
+  left: 50%;
+  translate: -50% 0;
+}
+button.rounded {
+  border-radius: 25px;
 }
 /* THIRD SECTION END */
